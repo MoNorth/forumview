@@ -1,0 +1,8 @@
+mysql£º
+	login: login_id,login_email,login_name,login_password
+	userinfo: info_id,login_id,info_img,info_msg
+	project: project_id,project_title,project_context,project_date,login_id,project_label
+	comment: comment_id,comment_context,comment_date,comment_comment,project_id,login_id
+mongodb:
+	project: project_id,assist[login_id]
+	user: login_id,follow[login_id],fans[login_id]
